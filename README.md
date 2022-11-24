@@ -4,6 +4,7 @@
 # GlumSak-PasteCreator
 A tool that is meant to create the needed pastes for GlumSak
 
+<div align="left">
 # How to use
 - Windows defender could scream about the binary because I converted it to a native exe file!
 - Launch
