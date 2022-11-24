@@ -2,6 +2,7 @@
 A tool that is meant to create the needed pastes for GlumSak
 
 # How to use
+- Windows defender could scream about the binary because I converted it to a native exe file!
 - Launch
 - Open a paste or start creating one. Left are the items such as (super mario kart 8 deluxe) and right are the links for the items/games.
 - Make sure if you want to include keys in your paste that it contains at least one item called titlekeys which has the links to the keys.
