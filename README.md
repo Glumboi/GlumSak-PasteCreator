@@ -16,3 +16,8 @@ A tool that is meant to create the needed pastes for GlumSak
 
 # 1.1
 - Added better error feedback
+
+# 1.2
+- Added a feature that lets you edit an entry by double clicking it
+- Added a clear entry button that makes the entry you selected clear (can also be executed by hitting delete on the keyboard)
+- Some small bug fixes
