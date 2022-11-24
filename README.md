@@ -13,3 +13,6 @@ A tool that is meant to create the needed pastes for GlumSak
 
 # 1.0
 - Initial release
+
+# 1.1
+- Added better error feedback
