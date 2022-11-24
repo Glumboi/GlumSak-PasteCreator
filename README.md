@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://i.imgur.com/XwPonAe.png" width="312" height="100" />
+<img src="https://i.imgur.com/XwPonAe.png" width="100" height="100" />
 
 # GlumSak-PasteCreator
 A tool that is meant to create the needed pastes for GlumSak
