@@ -1,10 +1,8 @@
-<div align="center">
 <img src="https://i.imgur.com/XwPonAe.png" width="100" height="100" />
 
 # GlumSak-PasteCreator
 A tool that is meant to create the needed pastes for GlumSak
 
-<div align="left">
 # How to use
 - Windows defender could scream about the binary because I converted it to a native exe file!
 - Launch
