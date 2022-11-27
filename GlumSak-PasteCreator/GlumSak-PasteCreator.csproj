@@ -213,8 +213,15 @@
     <Reference Include="TelerikCommon, Version=2022.1.118.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Entry.cs" />
     <Compile Include="Core\FileOpener.cs" />
     <Compile Include="Core\FileSaver.cs" />
+    <Compile Include="EditEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditEntry.Designer.cs">
+      <DependentUpon>EditEntry.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +236,9 @@
     <Compile Include="WebOpener.Designer.cs">
       <DependentUpon>WebOpener.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EditEntry.resx">
+      <DependentUpon>EditEntry.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>

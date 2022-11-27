@@ -120,12 +120,12 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuSeparator1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAA4AAAJFCAYAAADtSMZXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADSSURBVHhe7cuhDcAwEMDA33+q3ywlxScFx4dMPLK75887
+        iVBORw0KGgoAAAANSUhEUgAAAA4AAAJkCAYAAAAhuBDEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADcSURBVHhe7cuhDcAwEMDA33+q3ywlpTkp3IdMPLK75883
         jdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAI
         jdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAI
-        jdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjfD2OPMBKwVe
-        ZRo75jgAAAAASUVORK5CYII=
+        jdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAIjdAI
+        jdAI93HmA2WSwwZd9NhLAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="Items_label.BaseStylesheet" xml:space="preserve">
@@ -192,6 +192,24 @@
 </value>
   </data>
   <data name="LinksRemove_Button.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAZAAAAAlCAYAAABsz7++AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACwSURBVHhe7dWxDYAwAANB9p8qezBGBgDSIhSJr6+4xh7g
+        jzHG+bgA4IdzBeTrAIAtAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEg
+        ERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAAS
+        AQEgERAAEgEBIBEQAJIVkPkeAWBvzBtG9LTGTZQIlAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="LinksClear_Button.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAZAAAAAlCAYAAABsz7++AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACwSURBVHhe7dWxDYAwAANB9p8qezBGBgDSIhSJr6+4xh7g
+        jzHG+bgA4IdzBeTrAIAtAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEg
+        ERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAAS
+        AQEgERAAEgEBIBEQAJIVkPkeAWBvzBtG9LTGTZQIlAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="ItemsClear_Button.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAAlCAYAAABsz7++AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACwSURBVHhe7dWxDYAwAANB9p8qezBGBgDSIhSJr6+4xh7g

@@ -19,7 +19,7 @@ namespace GlumSak_PasteCreator
 {
     public partial class MainWindow : Form
     {
-        private WebOpener webOpener = new WebOpener();
+        private WebOpener webOpener;
 
         public MainWindow()
         {
@@ -39,6 +39,8 @@ namespace GlumSak_PasteCreator
 
         private void OpenWeb_Click(object sender, EventArgs e)
         {
+            webOpener = new WebOpener();
+            webOpener.StartPosition = FormStartPosition.CenterParent;
             webOpener.OpenLink_Button.Click += OpenLink_Button_Click;
             webOpener.Show();
         }
@@ -46,7 +48,18 @@ namespace GlumSak_PasteCreator
         private void OpenLink_Button_Click(object sender, EventArgs e)
         {
             //Link_TextBox
-            LoadPaste(true, webOpener.Link_TextBox.Text);
+            try
+            {
+                LoadPaste(true, webOpener.Link_TextBox.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Not a valid URL or the link doesnt contain a valid GlumSak paste!",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+                return;
+            }
             webOpener.Close();
         }
 
@@ -125,7 +138,16 @@ namespace GlumSak_PasteCreator
 
         private void Open_Click(object sender, EventArgs e)
         {
-            LoadPaste();
+            try
+            {
+                LoadPaste();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Not a valid GlumSak paste!", "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
 
         private void Save_Click(object sender, EventArgs e)
@@ -151,8 +173,14 @@ namespace GlumSak_PasteCreator
             Links_ListBox.Items.Remove(Links_ListBox.Items[index]);
         }
 
-        private void RemoveSelected(ListBox list)
+        private void RemoveSelected(ListBox list, bool softremove = false)
         {
+            if (softremove)
+            {
+                list.Items[list.SelectedIndex] = string.Empty;
+                return;
+            }
+
             try
             {
                 list.Items.Remove(list.Items[list.SelectedIndex]);
@@ -175,12 +203,54 @@ namespace GlumSak_PasteCreator
 
         private void Links_ListBox_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            MessageBox.Show(Links_ListBox.SelectedItem.ToString());
+            Entry entry = new Entry(Links_ListBox.SelectedItem.ToString(),
+            Links_ListBox.SelectedIndex);
+
+            EditEntry editEntry = new EditEntry();
+            editEntry.Init(entry);
+            editEntry.StartPosition = FormStartPosition.CenterParent;
+            editEntry.ShowDialog();
+            entry.ChangeValue(editEntry.Value_TextBox.Text);
+            Links_ListBox.Items[entry.Index] = entry.Value;
         }
 
         private void Items_ListBox_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            MessageBox.Show(Items_ListBox.SelectedItem.ToString());
+            Entry entry = new Entry(Items_ListBox.SelectedItem.ToString(),
+            Items_ListBox.SelectedIndex);
+
+            EditEntry editEntry = new EditEntry();
+            editEntry.Init(entry);
+            editEntry.StartPosition = FormStartPosition.CenterParent;
+            editEntry.ShowDialog();
+            entry.ChangeValue(editEntry.Value_TextBox.Text);
+            Items_ListBox.Items[entry.Index] = entry.Value;
+        }
+
+        private void Items_ListBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                RemoveSelected(Items_ListBox, true);
+            }
+        }
+
+        private void Links_ListBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                RemoveSelected(Links_ListBox, true);
+            }
+        }
+
+        private void LinksClear_Button_Click(object sender, EventArgs e)
+        {
+            RemoveSelected(Links_ListBox, true);
+        }
+
+        private void ItemsClear_Button_Click(object sender, EventArgs e)
+        {
+            RemoveSelected(Items_ListBox, true);
         }
     }
 }

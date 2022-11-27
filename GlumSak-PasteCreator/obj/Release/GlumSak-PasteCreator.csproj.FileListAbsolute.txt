@@ -19,3 +19,4 @@ F:\visual studio\repos\GlumSak-PasteCreator\obj\Release\GlumSak-PasteCreator.pdb
 F:\visual studio\repos\GlumSak-PasteCreator\obj\Release\GlumSak_PasteCreator.WebOpener.resources
 F:\visual studio\repos\GlumSak-PasteCreator\bin\Release\System.Diagnostics.DiagnosticSource.xml
 F:\visual studio\repos\GlumSak-PasteCreator\obj\Release\GlumSak-PasteCreator.csproj.Fody.CopyLocal.cache
+F:\visual studio\repos\GlumSak-PasteCreator\obj\Release\GlumSak_PasteCreator.EditEntry.resources
